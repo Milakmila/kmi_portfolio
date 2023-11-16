@@ -16,8 +16,9 @@ a{
     text-decoration: none;
     color: black;
     font-weight: 500;
+    font-family: 'Urbanist', sans-serif;
 }
 
-p,div, a{
+p,div{
     font-family: 'Poppins', sans-serif;
 }

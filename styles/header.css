@@ -1,9 +1,48 @@
 header {
-  background-color: gray;
-  display: flex;
-  justify-content: space-between;
+  background-color: black;
+  display: grid;
+  padding: 1rem 1rem;
+  grid-template-areas: "who work logo projects garden";
+  grid-template-columns: 15% 15% 40% 15% 15%;
+  justify-items: center;
+  align-items: center;
 
   @media screen and (max-width:600px) {
-     display: grid;
+    grid-template-areas: "logo" "who" "work" "projects" "garden";
+    grid-template-columns: 100%;
+    gap: 2rem;
+
   }
+}
+
+.item{
+  text-align: center;
+  color: white;
+  font-weight: 800;
+}
+.logo{
+  grid-area: logo;
+}
+#logoKmi{
+  color: white;
+}
+
+.who{
+  grid-area: who;
+}
+
+.works{
+  grid-area: work;
+}
+
+.project{
+  grid-area: projects;
+}
+
+.garden{
+  grid-area: garden;
+}
+
+.close-nav{
+  color: white;
 }
