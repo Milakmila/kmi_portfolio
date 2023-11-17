@@ -11,8 +11,11 @@ header {
     grid-template-areas: "logo" "who" "work" "projects" "garden";
     grid-template-columns: 100%;
     gap: 2rem;
+    height: 25rem;
+    position: relative;
 
   }
+
 }
 
 .item{
@@ -20,6 +23,11 @@ header {
   color: white;
   font-weight: 800;
 }
+
+.item:hover{
+  font-weight: 900;
+}
+
 .logo{
   grid-area: logo;
 }
@@ -43,6 +51,25 @@ header {
   grid-area: garden;
 }
 
+
 .close-nav{
   color: white;
+  display: none;
+  position: absolute;
+  top: 1rem;
+  left: 85%;
+  @media screen and (max-width:600px) {
+    display: block;
+  }
+}
+
+.svg-close-nav{
+  fill: white;
+  width: 2rem;
+}
+
+.icon{
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
 }

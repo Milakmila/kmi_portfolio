@@ -22,3 +22,8 @@ a{
 p,div{
     font-family: 'Poppins', sans-serif;
 }
+
+.icon-white{
+    fill: white;
+    color: white;
+}
