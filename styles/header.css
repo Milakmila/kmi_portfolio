@@ -45,9 +45,6 @@ header {
 .works{
   grid-area: work;
 }
-.who:hover + .fa-laptop-file{
-  display: block;
-}
 .project{
   grid-area: projects;
 }
@@ -55,6 +52,59 @@ header {
 .garden{
   grid-area: garden;
 }
+
+i.fa-moon{
+  visibility: hidden;
+  opacity: 0;
+  transition: all .2s;
+}
+
+.who:hover i.fa-moon{
+  visibility: visible;
+  opacity: 1;
+  transition: all .3s;
+}
+
+i.fa-laptop-file{
+  visibility: hidden;
+  opacity: 0;
+  transition: all .2s;
+}
+
+.work:hover i.fa-laptop-file{
+  visibility: visible;
+  opacity: 1;
+  transition: all .3s;
+}
+
+i.fa-ranking-star{
+  visibility: hidden;
+  opacity: 0;
+  transition: all .2s;
+}
+
+.star:hover i.fa-ranking-star{
+  visibility: visible;
+  opacity: 1;
+  transition: all .3s;
+}
+
+i.fa-leaf {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .2s;
+}
+
+.leaf:hover i.fa-leaf{
+  visibility: visible;
+  opacity: 1;
+  transition: all .3s;
+}
+
+
+
+
+
 
 .bar-nav, .close-nav{
   display: none;
@@ -85,7 +135,6 @@ header {
 header.sticky {
   position: fixed;
   left: 0; right: 0;
-  height: 60px;
   padding: 20px 0 10px 0;
   box-shadow: 0 5px 15px black;
 }
