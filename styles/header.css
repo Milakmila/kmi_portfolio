@@ -1,5 +1,5 @@
 header {
-  background-color: black;
+  background-color: rosybrown ;
   display: grid;
   padding: 1rem 1rem;
   grid-template-areas: "who work logo projects garden";
@@ -17,16 +17,20 @@ header {
   }
 
 }
+#myHeader{
+  transition: 0.3s;
+}
 
 .item{
   text-align: center;
   color: white;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .item:hover{
-  font-weight: 900;
+  font-weight: 800;
 }
+
 
 .logo{
   grid-area: logo;
@@ -38,11 +42,12 @@ header {
 .who{
   grid-area: who;
 }
-
 .works{
   grid-area: work;
 }
-
+.who:hover + .fa-laptop-file{
+  display: block;
+}
 .project{
   grid-area: projects;
 }
@@ -51,9 +56,7 @@ header {
   grid-area: garden;
 }
 
-
-.close-nav{
-  color: white;
+.bar-nav, .close-nav{
   display: none;
   position: absolute;
   top: 1rem;
@@ -61,6 +64,7 @@ header {
   @media screen and (max-width:600px) {
     display: block;
   }
+
 }
 
 .svg-close-nav{
@@ -72,4 +76,16 @@ header {
   position: relative;
   display: flex;
   gap: 0.5rem;
+}
+
+.nav-icon{
+  size: 2rem;
+}
+
+header.sticky {
+  position: fixed;
+  left: 0; right: 0;
+  height: 60px;
+  padding: 20px 0 10px 0;
+  box-shadow: 0 5px 15px black;
 }
