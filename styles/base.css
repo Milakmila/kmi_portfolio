@@ -6,7 +6,17 @@
     margin: 0;
     
 }
-
+/* Style for h1 */
+h1 {
+    font-size: 36px; 
+    text-transform: uppercase; 
+  }
+  
+h2 {
+    font-size: 24px;
+    text-transform: capitalize; 
+  }
+  
 h1,h2,h3,h4,h5{
     font-family: 'Urbanist', sans-serif;
     font-weight: 700;

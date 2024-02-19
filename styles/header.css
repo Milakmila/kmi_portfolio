@@ -1,5 +1,7 @@
+
+/*-----------------------Header---------------- */
 header {
-  background-color: rosybrown ;
+  background-color: rosybrown;
   display: grid;
   padding: 1rem 1rem;
   grid-template-areas: "who work logo projects garden";
@@ -17,73 +19,77 @@ header {
   }
 
 }
-#myHeader{
+
+#myHeader {
   transition: 0.3s;
 }
 
-.item{
+.item {
   text-align: center;
   color: white;
   font-weight: 600;
 }
 
-.item:hover{
+.item:hover {
   font-weight: 800;
 }
 
 
-.logo{
+.logo {
   grid-area: logo;
 }
-#logoKmi{
+
+#logoKmi {
   color: white;
 }
 
-.who{
+.who {
   grid-area: who;
 }
-.works{
+
+.works {
   grid-area: work;
 }
-.project{
+
+.project {
   grid-area: projects;
 }
 
-.garden{
+.garden {
   grid-area: garden;
 }
 
-i.fa-moon{
+i.fa-moon {
   visibility: hidden;
   opacity: 0;
   transition: all .2s;
 }
 
-.who:hover i.fa-moon{
+.who:hover i.fa-moon {
   visibility: visible;
   opacity: 1;
   transition: all .3s;
 }
 
-i.fa-laptop-file{
+i.fa-laptop-file {
   visibility: hidden;
   opacity: 0;
   transition: all .2s;
 }
 
-.work:hover i.fa-laptop-file{
+.work:hover i.fa-laptop-file {
   visibility: visible;
   opacity: 1;
   transition: all .3s;
 }
 
-i.fa-ranking-star{
+i.fa-ranking-star {
   visibility: hidden;
   opacity: 0;
   transition: all .2s;
 }
 
-.star:hover i.fa-ranking-star{
+.star:hover i.fa-ranking-star {
   visibility: visible;
   opacity: 1;
   transition: all .3s;
@@ -95,7 +101,7 @@ i.fa-leaf {
   transition: all .2s;
 }
 
-.leaf:hover i.fa-leaf{
+.leaf:hover i.fa-leaf {
   visibility: visible;
   opacity: 1;
   transition: all .3s;
@@ -106,35 +112,53 @@ i.fa-leaf {
 
 
 
-.bar-nav, .close-nav{
+.bar-nav,
+.close-nav {
   display: none;
   position: absolute;
   top: 1rem;
   left: 85%;
+
   @media screen and (max-width:600px) {
     display: block;
   }
 
 }
+.close-nav{
+  opacity: 0;
+}
 
-.svg-close-nav{
+.svg-close-nav {
   fill: white;
   width: 2rem;
 }
 
-.icon{
+.icon {
   position: relative;
   display: flex;
   gap: 0.5rem;
 }
 
-.nav-icon{
+@media screen and (max-width:600px) {
+  .icon::after {
+    content: "";
+    width: 22rem;
+    height: 0.1rem;
+    background-color: white;
+    position: absolute;
+    top: 2rem;
+    right: -8rem;
+  }
+}
+
+.nav-icon {
   size: 2rem;
 }
 
 header.sticky {
   position: fixed;
-  left: 0; right: 0;
+  left: 0;
+  right: 0;
   padding: 20px 0 10px 0;
-  box-shadow: 0 5px 15px black;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }

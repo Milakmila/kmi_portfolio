@@ -8,9 +8,10 @@
   });*/
 
   document.addEventListener('DOMContentLoaded', function () {
+
+    ///<<<<<<<<<<<<<<<<<>>>>>>Header Scroll>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     let header = document.querySelector('.kmi-header');
     let scrolling = false;
-
     window.addEventListener('scroll', (event) => {
         scrolling = window.scrollY > 0;
 
@@ -22,4 +23,18 @@
             header.classList.remove("sticky");
         }
     });
+    //<<<<<<<<<<<<<<<<<<<<<<<Header Bar Choose>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+   
+      const btn = document.querySelector(".bar-nav");
+      const nav = document.querySelector("");
+
+      btn.addEventListener("click", function(){
+        if(nav.classList.contains("open")){
+          nav.classList.remove("open");
+        }else{
+          nav.classList.add("open");
+          console.log("aqui")
+        }
+      })
+
 });
