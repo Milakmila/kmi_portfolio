@@ -1,0 +1,30 @@
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.grid-points{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-areas: "who logo highlight"
+                            "work logo garden";
+    justify-content: center;
+    align-items: center;
+}
+.fwho{
+    grid-area: who;
+}
+.fwork{
+    grid-area: work;
+}
+.logcopy{
+    grid-area: logo;
+}
+
+.fstar{
+    grid-area: highlight;
+}
+.fleaf{
+    grid-area: garden;
+}
