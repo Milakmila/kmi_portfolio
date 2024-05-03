@@ -6,6 +6,32 @@
     margin: 0;
     
 }
+
+.rose{
+    color: #DBA78D;
+    background-color: #DBA78D;
+}
+
+.blacky{
+    color: #262626;
+    background-color:#262626 ;
+    fill: #262626;
+}
+.blacky-icon:before{
+    color: #262626 ;
+}
+
+.baby-blue-text{
+    color: #56BFB5;
+}
+.baby-blue{
+    background-color:#56BFB5 ;
+}
+
+.orangy{
+    color: #F26B1D;
+}
+
 /* Style for h1 */
 h1 {
     font-size: 36px; 
@@ -21,10 +47,14 @@ h1,h2,h3,h4,h5{
     font-family: 'Urbanist', sans-serif;
     font-weight: 700;
 }
+.title{
+    letter-spacing: 10px;
+    margin: 2rem 0;
+}
 
 a{
     text-decoration: none;
-    color: black;
+    color: #262626;
     font-weight: 500;
     font-family: 'Urbanist', sans-serif;
 }
@@ -33,7 +63,26 @@ p,div{
     font-family: 'Poppins', sans-serif;
 }
 
+img{
+    width: 100%;
+    height: auto;
+}
+
 .icon-white{
-    fill: white;
-    color: white;
+    fill: #F5F0ED;
+    color: #F5F0ED;
+}
+
+.btn-kmi{
+    background-color: #F26B1D;
+    color: #F5F0ED;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    font-weight: bold;
+}
+
+.btn-kmi:hover{
+    color: #F26B1D;
+    background-color: #F5F0ED;
+    transition: all 0.4s;
 }

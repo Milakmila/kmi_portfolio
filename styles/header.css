@@ -1,16 +1,15 @@
 
 /*-----------------------Header---------------- */
 header {
-  background-color: rosybrown;
   display: grid;
   padding: 1rem 1rem;
-  grid-template-areas: "who work logo projects garden";
-  grid-template-columns: 15% 15% 40% 15% 15%;
+  grid-template-areas: "logo who work projects garden button";
+  grid-template-columns: 20rem;
   justify-items: center;
   align-items: center;
 
-  @media screen and (max-width:600px) {
-    grid-template-areas: "logo" "who" "work" "projects" "garden";
+  @media screen and (max-width:900px) {
+    grid-template-areas: "logo" "who" "work" "projects" "garden" "button";
     grid-template-columns: 100%;
     gap: 2rem;
     height: 25rem;
@@ -57,6 +56,9 @@ header {
 
 .garden {
   grid-area: garden;
+}
+.button-header{
+  grid-area: button;
 }
 
 i.fa-moon {
@@ -106,11 +108,6 @@ i.fa-leaf {
   opacity: 1;
   transition: all .3s;
 }
-
-
-
-
-
 
 .bar-nav,
 .close-nav {
