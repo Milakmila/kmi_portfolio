@@ -51,6 +51,9 @@ h1,h2,h3,h4,h5{
     letter-spacing: 10px;
     margin: 2rem 0;
 }
+.subtitle{
+    font-size: 28px;
+}
 
 a{
     text-decoration: none;
@@ -61,6 +64,7 @@ a{
 
 p,div{
     font-family: 'Poppins', sans-serif;
+    font-size: 18px;
 }
 
 img{

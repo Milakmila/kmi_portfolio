@@ -4,9 +4,10 @@ header {
   display: grid;
   padding: 1rem 1rem;
   grid-template-areas: "logo who work projects garden button";
-  grid-template-columns: 20rem;
+  grid-template-columns: 15rem;
   justify-items: center;
   align-items: center;
+  z-index: 6;
 
   @media screen and (max-width:900px) {
     grid-template-areas: "logo" "who" "work" "projects" "garden" "button";
@@ -27,6 +28,7 @@ header {
   text-align: center;
   color: white;
   font-weight: 600;
+  font-size: 24px;
 }
 
 .item:hover {
