@@ -100,7 +100,27 @@
 }
 
 /* Highlight Projects */
+.highlight-projects{
+  color: #F5F0ED;
+  text-align: center;
+  padding: 2rem;
+}
+.project{
+  display: flex;
+  flex-direction: column;
 
+}
+.project-1{
+  display: flex;
+  justify-content: space-between;
+  background-color: #262626;
+}
+
+.project-2{
+  display: flex;
+  background-color: #DBA78D;
+  width: 100%;
+}
 
 
 /*Tablets*/ 
