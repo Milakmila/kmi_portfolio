@@ -10,6 +10,10 @@ body{
     background-color: #F5F0ED;
 }
 
+.whity{
+   color: #F5F0ED; 
+}
+
 .rose{
     color: #DBA78D;
     background-color: #DBA78D;
@@ -95,4 +99,9 @@ img{
     color: #F26B1D;
     background-color: #F5F0ED;
     transition: all 0.4s;
+}
+
+.center-items{
+    left: 50%;
+    transform: translate(-50%, 50%);
 }
