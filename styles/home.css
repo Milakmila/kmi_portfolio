@@ -36,6 +36,8 @@
 }
 .work h1{
   margin: 2rem 0;
+  Z-INDEX: 2;
+  position: relative;
 }
 .cards-work{
   display: grid;
@@ -96,7 +98,7 @@
 .background-blue{
   background-color: #56BFB5;
   width: 100%;
-  height: 30rem;
+  height: 20rem;
   position:absolute;
   bottom: 20rem;
 }
@@ -117,7 +119,7 @@
 
 .title-projects{
   position: absolute;
-  top: 180px;
+  top: 30rem;
   z-index: 1;
 
 }
@@ -186,6 +188,12 @@
     gap: 3rem;
   }
 
+}
+/*Desktop*/
+@media screen and (max-width:768px) {
+  .work{
+    margin: 0;
+  }
 }
 
 /*Phone*/

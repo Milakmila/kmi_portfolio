@@ -13,7 +13,7 @@ header {
     grid-template-areas: "logo" "who" "work" "projects" "garden" "button";
     grid-template-columns: 100%;
     gap: 2rem;
-    height: 25rem;
+    height: auto;
     position: relative;
 
   }

@@ -1,0 +1,56 @@
+.container-main-img{
+    position: relative;
+}
+.principles-services{
+    background-color: #f26b1d71;
+    border-radius: 50px;
+
+}
+.principles-services h1{
+    text-align: center;
+
+}
+
+
+.flex-services{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+}
+.principles-services-each{
+    text-align: left;
+}
+
+.main-projects{
+    display: flex;
+    gap: 4rem;
+    margin: 2rem;
+}
+
+.project-individual{
+    background-color:  #DBA78D;
+    border-radius: 15px;
+    padding: 0.8rem;
+}
+
+.project-individual-icons{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.circle-icon{
+    background-color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 20px;
+    padding: 0.4rem;
+    display: grid;
+    justify-items: center;
+}
+
+.workTogether{
+    margin: 5rem;
+    text-align: center;
+}
