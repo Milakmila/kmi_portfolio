@@ -65,7 +65,7 @@ h1,h2,h3,h4,h5{
     font-size: 28px;
 }
 
-a{
+a, ul, li{
     text-decoration: none;
     color: #262626;
     font-weight: 500;
@@ -93,6 +93,8 @@ img{
     padding: 1rem 2rem;
     border-radius: 3rem;
     font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 .btn-kmi:hover{
@@ -100,10 +102,111 @@ img{
     background-color: #F5F0ED;
     transition: all 0.4s;
 }
+  
+  .btn-animated {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden; /* Oculta triángulos fuera del botón */
+    transition: background-color 0.4s, box-shadow 0.4s;
+    box-shadow: 0 0 10px #e67e22, 0 0 20px #e67e22, 0 0 30px #e67e22; /* Brillo de neón */
+  }
+  
+  /* Efecto de cambio de color en hover */
+  .btn-animated:hover {
+    background-color: #2980b9;
+    box-shadow: 0 0 20px #2980b9, 0 0 40px #2980b9, 0 0 60px #2980b9;
+  }
+  
+  /* Crear múltiples triángulos en diferentes posiciones */
+  .btn-animated .triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    pointer-events: none;
+    opacity: 0; /* Inicialmente invisible */
+    animation: animate-triangle 3s infinite ease-out;
+  }
+  
+  /* Efectos para las "plumas" */
+  .triangle-1 {
+    border-width: 0 15px 15px 0;
+    border-color: transparent #f39c12 transparent transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg) scale(0.5);
+  }
+  
+  .triangle-2 {
+    border-width: 0 20px 20px 0;
+    border-color: transparent #f1c40f transparent transparent;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotate(45deg) scale(0.7);
+  }
+  
+  .triangle-3 {
+    border-width: 0 10px 10px 0;
+    border-color: transparent #ff4757 transparent transparent;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%) rotate(45deg) scale(0.4);
+  }
+  
+  .triangle-4 {
+    border-width: 0 12px 12px 0;
+    border-color: transparent #2ed573 transparent transparent;
+    top: 60%;
+    left: 70%;
+    transform: translate(-50%, -50%) rotate(45deg) scale(0.6);
+  }
+  
+  .triangle-5 {
+    border-width: 0 18px 18px 0;
+    border-color: transparent #1e90ff transparent transparent;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg) scale(0.8);
+  }
+  
+  /* Animación de los triángulos en hover */
+  .btn-animated:hover .triangle {
+    opacity: 1;
+  }
+  
+  /* Keyframes para mover triángulos como plumas */
+  @keyframes animate-triangle {
+    0% {
+      transform: translate(-50%, -50%) rotate(45deg) scale(0.5);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-200px, -200px) rotate(45deg) scale(1.5);
+      opacity: 0;
+    }
+  }
 
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  
 .center-items{
     left: 50%;
     transform: translate(-50%, 50%);
+}
+.center-text{
+    text-align: center;
 }
 
 .phrase{
