@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
@@ -16,7 +16,6 @@
         rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/d5d81529d3.js" crossorigin="anonymous"></script>
-</head>
 </head>
 <body>
     <header class="kmi-header baby-blue" id="myHeader">
@@ -42,7 +41,7 @@
 
         <a class="logo" href="home.html">
             <div>
-                <img src="./img/FrontendWebLogoKmi.svg" alt="Frontend developer Kmi" id="logoKmi">
+                <img src="../img/FrontendWebLogoKmi.svg" alt="Frontend developer Kmi" id="logoKmi">
             </div>
         </a>
 
@@ -57,54 +56,41 @@
     </header>
 
     <main>
-        <div class="principal-parallax">
-            <div class="buttons-left">
-                <div class="button-div second-button">
-                    <a href="../pages/eachPost-HTML.html" class="btn-kmi neon-orange">Learn HTML
-
-
-                    </a>
-                    
-                    <div class="hashtag">#HTML #Maquetacion</div>
+        <section class="background-blog-position">
+            <div class="cover-image-blog"></div>
+            <h2 class="center-text center-blog-items">Efecto Parallax: Añadiendo profundidad a tus páginas</h2>
+        </section>
+    
+        <section class="firstPart-blog">
+            <div class="flex-blog">
+                <div class="left-side-FirstPart">
+                    <h5 class="phrase">Dinamismo que atrae</h5>
+                    <p>Uno de los trucos visuales que más impresionan a los clientes es el efecto parallax. Es una técnica sencilla que puede darles una sensación de profundidad a tus páginas y crear una experiencia visual inmersiva para los usuarios. Además, ¡es muy divertido de implementar!</p>
                 </div>
-                <div class="button-div first-button btn-green">
-                    <a href="../pages/eachPost-magia.html" class=" btn-kmi neon-green">Apariencia Web</a>
-                    <br>
-                    <div class="hashtag">#web #UX</div>
+                <div class="image-right image-connector">
+                    <img src="../img/Education-Pencil.jpg" alt="Parallax Effect">
                 </div>
-
-
             </div>
-            <div class="main-parallax">
-                <h1>Kmi</h1>
-                <h2>Garden Notes</h2>
-                <img src="" alt="">
-
-            </div>
-            <div class="buttons-right">
-                <div class="button-div second-button">
-                    <a href="../pages/eachPost-parallax.html" class="btn-kmi neon-blue">Efecto parallax</a>
-                    <br>
-                    <div class="hashtag">#Animaciones #Efecto</div>
-                </div>
-                <div class="button-div first-button">
-                    <a href="../pages/eachPost-frontvsback.html" class="btn-kmi neon-pink">Frontend Vs Backend</a>
-                    <br>
-                    <div class="hashtag">#Frontend #Backend</div>
-                </div>
-
-            </div>
-
+            
+        </section>
+    
+        <section class="notes right-notes">
+            <h3 class="note-title">¿Qué es el efecto Parallax?</h3>
+            <p class="note">El efecto Parallax consiste en hacer que los elementos de fondo se muevan a una velocidad diferente a los elementos en primer plano cuando se hace scroll. Esto da una sensación de profundidad y dinamismo, como si estuvieras viendo algo en 3D.</p>
+        </section>
+    
+        <section class="notes left-notes">
+            <h3 class="note-title">¿Cómo se hace?</h3>
+            <p>En HTML y CSS, crear un efecto parallax básico es sencillo. Puedes usar propiedades como <code>background-attachment: fixed;</code> para mantener el fondo fijo mientras el usuario hace scroll.</p>
+        </section>
+    
+        <div class="image-connector">
+            <img src="../img/girl-working.jpg" alt="Parallax Visual">
         </div>
-
-        <div class="reasons">
-            <h2>why do this?</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor odio quisquam officia, odit molestiae sit excepturi quasi voluptas fugit praesentium saepe optio amet? Impedit error harum unde aspernatur architecto? Illo!</p>
-            <img src="" alt="">
-
-        </div>
-
     </main>
+    
+    
+
     <footer class="orangy-bg">
 
         <div class="flex-footer">
@@ -126,7 +112,7 @@
             <div class="logcopy">
                 <a class="logo logo" href="home.html">
                     <div>
-                        <img src="./img/FrontendWebLogoKmi.svg" alt="Frontend developer Kmi" id="logoKmi">
+                        <img src="../img/FrontendWebLogoKmi.svg" alt="Frontend developer Kmi" id="logoKmi">
                     </div>
                 </a>
                 <div>2024 @Copyright </div>
